@@ -43,7 +43,7 @@ paths:
     delete:
       summary: deletes student
       description: |
-        delete a single student
+        Deletes a single student
       operationId: delete_student
       parameters:
       - name: student_id
@@ -61,7 +61,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Student'
+                type: number
+                format: integer
+                x-content-type: application/json
         "400":
           description: invalid ID
         "404":

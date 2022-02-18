@@ -24,12 +24,12 @@ def add_student(body=None):  # noqa: E501
 def delete_student(student_id):  # noqa: E501
     """deletes student
 
-    delete a single student  # noqa: E501
+    Deletes a single student  # noqa: E501
 
     :param student_id: the uid
     :type student_id: float
 
-    :rtype: Student
+    :rtype: float
     """
     return delete(student_id)
 
